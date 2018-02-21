@@ -1,14 +1,26 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Three  digit Armstrong number
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <p> search the three Digit Armstong number from 100 to 1000 
+    </p>
+    <ion-item>
+      <ion-label floating>Enter the number</ion-label>
+      <ion-input type="number" [(ngModel)] ="number.input" ></ion-input>
+    </ion-item>
+    <ion-item>
+      {{number.output}}
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="submit()">clickhere</button>
+    </ion-item>
+    
+
+
 </ion-content>
